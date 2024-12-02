@@ -1,0 +1,22 @@
+<body>
+    <%- include("partials/header.ejs") %>
+    <div class="content">
+        <main>
+            <table class="surah_table">
+                <tbody>
+                    <% surahData.forEach(surah => { %>
+                        <tr onclick="window.location.href='/surah/<%= surah.surah_no %>'">
+                            <td>
+                                <a href="/surah/<%= surah.surah_no %>" class="surah-link">
+                                    <%= surah.name %>
+                                </a>
+                            </td>
+                            <td><%= surah.noOfAyah %></td>
+                        </tr>
+                    <% }); %>
+                </tbody>
+            </table>
+        </main>
+    </div>
+    <%- include("partials/footer.ejs") %>
+</body>

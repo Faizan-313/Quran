@@ -1,0 +1,92 @@
+/* Body Styling */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f7f9fc;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 90vh;
+    padding: 20px 0;
+}
+
+/* Content */
+.content {
+    width: 90%;
+    max-width: 1200px;
+    margin: 20px auto;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+/* Surah Table */
+.surah_table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.surah_table tbody tr {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    background: #fff;
+    padding: 15px 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+.surah_table tbody tr:hover {
+    background-color: #f1f9f6;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Surah Name (Left-Aligned) */
+.surah_table tbody td:first-child {
+    flex: 1;
+    text-align: left;
+}
+
+.surah_table tbody a.surah-link {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #2c3e50;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.surah_table tbody a.surah-link:hover {
+    color: #27ae60;
+}
+
+/* Number of Ayahs (Right-Aligned) */
+.surah_table tbody td:last-child {
+    flex: 0;
+    text-align: right;
+    font-size: 1rem;
+    color: #7f8c8d;
+    font-weight: bold;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .content {
+        width: 90%;
+        margin-left: 0;
+    }
+
+    .surah_table tbody tr {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .surah_table tbody td:last-child {
+        margin-top: 10px;
+    }
+}

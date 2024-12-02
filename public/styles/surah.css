@@ -1,0 +1,81 @@
+/* General Reset */
+body .surah_body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #f8f9fa;
+    color: #333;
+}
+
+/* Container */
+.surah-container {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+    font-family: 'Arial', sans-serif;
+    color: #333;
+}
+
+/* Header */
+.surah-header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.surah-header h1 {
+    font-size: 40px;
+    color: #007bff;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.surah-header p {
+    font-size: 20px;
+    color: #555;
+    font-style: italic;
+}
+
+/* Surah Content */
+.surah-content {
+    line-height: 1.8;
+    margin-bottom: 30px;
+    width: 100%;
+}
+
+/* Ayah Styling */
+.ayah-line {
+    padding: 15px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    color: #000000;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.05);
+    margin-bottom: 10px;
+    text-align: right;
+    font-size: 30px;
+    line-height: 1.6;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.ayah-line:hover {
+    background-color: #e6f7ff;
+    transform: scale(1.03);
+}
+
+.ayah-line p {
+    margin: 0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .surah-header h1 {
+        font-size: 32px;
+    }
+
+    .ayah-line {
+        font-size: 18px;
+    }
+}
+

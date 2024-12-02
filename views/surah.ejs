@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quran Reader</title>
+    <link rel="stylesheet" href="/styles/surah.css">
+</head>
+<body class="surah_body">
+    <div class="surah-container">
+        <header class="surah-header">
+            <h1><%= surahData.name %></h1>
+            <p><strong>Number of Ayahs:</strong> <%= surahData.noOfAyahs %></p>
+        </header>
+        
+        <div class="surah-content">
+            <% surahData.surah_content.forEach((ayah, index) => { %>
+                <div class="ayah-line">
+                    <p> ◌ <%= ayah %> </p>
+                </div>
+            <% }); %>
+        </div>
+    </div>
+</body>
+</html>
