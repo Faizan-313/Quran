@@ -4,7 +4,7 @@ This project is a simple web application built with Node.js, Express, and EJS. T
 
 The application provides a user-friendly way to browse through the Quran, read the Surah names, and access their full content for a deeper understanding of the text.
 # checkout the app on...
-http://events-on-this-day.up.railway.app
+http://quran-faizan.up.railway.app
 
 ## Features
 Surah List: Displays all Surah names with the number of Ayahs.
